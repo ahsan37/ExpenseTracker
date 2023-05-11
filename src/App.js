@@ -4,7 +4,6 @@ import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 import ExpenseTotal from './components/ExpenseTotal';
 import styled from 'styled-components';
-import FilteredTotal from './components/FilteredTotal';
 
 const AppWrapper = styled.div`
   display: flex;
@@ -23,7 +22,8 @@ const TotalExpenses = styled.div`
   border-style: solid;
   border-width: 3px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 80%;
+  max-width: 400px;
   text-align: center;
   font-size: 20px;
 `;
@@ -34,17 +34,16 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 400px;
 `;
 
 const FormWrapper = styled.div`
   width: 100%;
-  max-width: 400px;
 `;
 
 const ListWrapper = styled.div`
   width: 100%;
-  max-width: 400px;
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 
 function App() {
@@ -58,7 +57,6 @@ function App() {
           <FormWrapper>
             <ExpenseForm />
           </FormWrapper>
-          {/* <FilteredTotal /> */}
           <ListWrapper>
             <ExpenseList />
           </ListWrapper>

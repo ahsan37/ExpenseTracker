@@ -91,15 +91,15 @@ const styles = {
   },
   input: {
     marginBottom: '10px',
-    padding: '25px',
+    padding: '15px',
     borderRadius: '50px',
-    border: '1px solid #ced4da',
+    border: '1px solid',
   },
   button: {
     background: '#007bff',
     color: '#fff',
     border: 'none',
-    padding: '25px',
+    padding: '15px',
     borderRadius: '50px',
     cursor: 'pointer',
     marginTop:'10px;',
