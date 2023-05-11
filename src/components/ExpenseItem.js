@@ -61,7 +61,7 @@ const styles = {
     padding: '5px 10px',
     cursor: 'pointer',
     marginTop: '0px',
-    marginLeft: '300px',
+    marginLeft: '100px',
   },
 };
 

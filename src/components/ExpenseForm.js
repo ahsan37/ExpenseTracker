@@ -102,7 +102,7 @@ const styles = {
     padding: '15px',
     borderRadius: '50px',
     cursor: 'pointer',
-    marginTop:'10px;',
+    marginTop:'20px;',
     textSize:'200px',
   },
 };

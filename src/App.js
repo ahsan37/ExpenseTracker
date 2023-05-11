@@ -16,7 +16,7 @@ const AppWrapper = styled.div`
 
 const TotalExpenses = styled.div`
   background-color: white;
-  padding: 22px;
+  padding: 1px;
   border-radius: 100px;
   border-color: #007bff;
   border-style: solid;

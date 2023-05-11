@@ -20,7 +20,7 @@ const FilterSelect = styled.select`
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 400px;
+  width: 100px;
   margin-bottom: 10px;
 `;
 
@@ -28,7 +28,7 @@ const FilterInput = styled.input`
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 380px;
+  width: 100px;
   margin-bottom: 10px;
 `;
 
