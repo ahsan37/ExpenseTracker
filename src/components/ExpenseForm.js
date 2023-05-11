@@ -57,6 +57,7 @@ const ExpenseForm = () => {
         value={date}
         onChange={(e) => setDate(e.target.value)}
         required
+        placeholder="Date"
         style={styles.input}
       />
       <button type="submit" style={styles.button}>

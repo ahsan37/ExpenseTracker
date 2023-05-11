@@ -20,7 +20,7 @@ const FilterSelect = styled.select`
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 100px;
+  width: 300px;
   margin-bottom: 10px;
 `;
 
@@ -28,7 +28,7 @@ const FilterInput = styled.input`
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 100px;
+  width: 300px;
   margin-bottom: 10px;
 `;
 
@@ -70,6 +70,7 @@ const ExpenseList = () => {
           id="dateFilter"
           type="date"
           value={selectedDate}
+          placeholder="Date"
           onChange={(e) => setSelectedDate(e.target.value)}
         />
       </FiltersWrapper>
