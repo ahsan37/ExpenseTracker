@@ -1,0 +1,69 @@
+/* styles.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .total-expenses {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form input,
+  .form select,
+  .form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  .form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .transactions-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
