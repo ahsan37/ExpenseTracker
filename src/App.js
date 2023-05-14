@@ -49,7 +49,7 @@ const ListWrapper = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-  font-size: 54px;
+  font-size: 44px;
   margin-bottom: 55px;
 `;
 

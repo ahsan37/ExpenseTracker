@@ -13,7 +13,7 @@ const FiltersWrapper = styled.div`
 
 const FilterLabel = styled.label`
   margin-bottom: 5px;
-  font-fanily: Ariel;
+  font-family: Arial;
 `;
 
 const FilterSelect = styled.select`
@@ -30,11 +30,12 @@ const FilterInput = styled.input`
   border-radius: 10px;
   width: 300px;
   margin-bottom: 10px;
-  backgroundColor: 'white',
-
 `;
 
-
+const StyledDateInput = styled(FilterInput)`
+  appearance: none;
+  background-color: white;
+`;
 
 const ExpenseList = () => {
   const { expenses } = useExpenseState();
@@ -70,7 +71,7 @@ const ExpenseList = () => {
           <option value="Miscellaneous">Miscellaneous</option>
         </FilterSelect>
         <FilterLabel htmlFor="dateFilter">Filter by Date:</FilterLabel>
-        <FilterInput
+        <StyledDateInput
           id="dateFilter"
           type="date"
           value={selectedDate}
