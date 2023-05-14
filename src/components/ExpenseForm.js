@@ -58,7 +58,7 @@ const ExpenseForm = () => {
         onChange={(e) => setDate(e.target.value)}
         required
         placeholder="Date"
-        style={styles.input}
+        style={styles.dateInput}
       />
       <button type="submit" style={styles.button}>
         Add Expense
@@ -75,6 +75,14 @@ const styles = {
   line: {
     border: '1.5px solid #007bff',
     marginTop: '30px',
+  },
+
+  dateInput: {
+    marginBottom: '10px',
+    padding: '15px',
+    borderRadius: '50px',
+    border: '1px solid',
+    backgroundColor: 'white',
   },
 
   title: {

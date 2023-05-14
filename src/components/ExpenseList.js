@@ -32,6 +32,8 @@ const FilterInput = styled.input`
   margin-bottom: 10px;
 `;
 
+
+
 const ExpenseList = () => {
   const { expenses } = useExpenseState();
   const [selectedCategory, setSelectedCategory] = useState('');
