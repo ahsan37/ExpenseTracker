@@ -37,10 +37,23 @@ const StyledDateInput = styled(FilterInput)`
   background-color: white;
 `;
 
+const StyledCategorySelect = styled(FilterSelect)`
+  appearance: none;
+  background-color: white;
+`;
+
+const FilteredTotalAmount = styled.p`
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+`;
+
+
 const ExpenseList = () => {
   const { expenses } = useExpenseState();
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
+  const [filteredTotal, setFilteredTotal] = useState(0);
 
   // Filter expenses based on selected category and date
   const filteredExpenses = expenses.filter((expense) => {
@@ -53,11 +66,16 @@ const ExpenseList = () => {
     return true;
   });
 
+  const filteredAmountTotal = filteredExpenses.reduce(
+    (total, expense) => total + expense.amount,
+    0
+  );
+
   return (
     <div>
       <FiltersWrapper>
         <FilterLabel htmlFor="categoryFilter">Filter by Category:</FilterLabel>
-        <FilterSelect
+        <StyledCategorySelect
           id="categoryFilter"
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
@@ -69,8 +87,8 @@ const ExpenseList = () => {
           <option value="Transport">Transport</option>
           <option value="Entertainment">Entertainment</option>
           <option value="Miscellaneous">Miscellaneous</option>
-        </FilterSelect>
-        <FilterLabel htmlFor="dateFilter">Filter by Date:</FilterLabel>
+          </StyledCategorySelect>
+     <FilterLabel htmlFor="dateFilter">Filter by Date:</FilterLabel>
         <StyledDateInput
           id="dateFilter"
           type="date"
@@ -79,6 +97,10 @@ const ExpenseList = () => {
           onChange={(e) => setSelectedDate(e.target.value)}
         />
       </FiltersWrapper>
+
+      <div>
+      <FilteredTotalAmount>Filtered Total: {filteredAmountTotal}</FilteredTotalAmount>
+    </div>
       <div>
         {filteredExpenses.length === 0 ? (
           <p>No expenses found.</p>
