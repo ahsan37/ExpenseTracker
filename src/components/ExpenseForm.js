@@ -42,7 +42,7 @@ const ExpenseForm = () => {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
         required
-        style={styles.input}
+        style={styles.Catinput}
       >
         <option value="">Select category</option>
         <option value="Food">Food</option>
@@ -80,6 +80,15 @@ const styles = {
   dateInput: {
     marginBottom: '10px',
     padding: '15px',
+    borderRadius: '50px',
+    border: '1px solid',
+    backgroundColor: 'white',
+    width: '150%',
+  },
+
+  Catinput: {
+    marginBottom: '10px',
+    padding: '25px',
     borderRadius: '50px',
     border: '1px solid',
     backgroundColor: 'white',
