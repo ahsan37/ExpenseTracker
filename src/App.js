@@ -46,10 +46,18 @@ const ListWrapper = styled.div`
   margin-top: 20px;
 `;
 
+
+const Title = styled.h1`
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 55px;
+`;
+
 function App() {
   return (
     <ExpenseProvider>
       <AppWrapper>
+      <Title>Cash In Cash Out</Title>
         <TotalExpenses>
           <ExpenseTotal />
         </TotalExpenses>

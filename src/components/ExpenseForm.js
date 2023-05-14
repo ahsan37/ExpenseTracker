@@ -83,12 +83,11 @@ const styles = {
     borderRadius: '50px',
     border: '1px solid',
     backgroundColor: 'white',
-    width: '150%',
   },
 
   Catinput: {
     marginBottom: '10px',
-    padding: '25px',
+    padding: '15px',
     borderRadius: '50px',
     border: '1px solid',
     backgroundColor: 'white',

@@ -30,6 +30,8 @@ const FilterInput = styled.input`
   border-radius: 10px;
   width: 300px;
   margin-bottom: 10px;
+  backgroundColor: 'white',
+
 `;
 
 
